@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body{ display:flex;margin: 0;font-family: Arial, Helvetica, sans-serif;}
+        .sidebar{width: 300px; padding: 20px; border-right: 1px solid #ccc;}
+        .navbar{position: fixed; top: 0; left: 300px;right: 0; height: 60px; background: #eee; padding: 10px;display:flex ; align-items: center; gap:20px;}
+        .main{margin-top: 80px; margin-left: 320px;padding: 20px; display: flex; flex-wrap: wrap; gap: 20px;}
+        .card{width: 220px; padding: 10px;border: 1px solid #aaa; border-radius: 5px;}
+        select,input,button{ width: 100%; padding: 7px;margin: 8px 0;}
+    </style>
+</head>
+<body>
+    <div class=""sidebar>
+        <h2>Add Fleet</h2>
+        <input id ="reg" type="text" placeholder="Reg No">
+        <select id="category">
+            <option value="">Select category</option>
+            <option>Auto</option>
+            <option>Car</option>
+            <option>Truck</option>
+            <option>Bus</option>
+        </select>
+    </div>
+</body>
+</html>
