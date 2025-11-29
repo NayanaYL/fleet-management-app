@@ -18,12 +18,37 @@
         <h2>Add Fleet</h2>
         <input id ="reg" type="text" placeholder="Reg No">
         <select id="category">
-            <option value="">Select category</option>
+            <option value="">select category</option>
             <option>Auto</option>
             <option>Car</option>
             <option>Truck</option>
             <option>Bus</option>
         </select>
+        <input type="text" id="driver" placeholder="Driver Name">
+        <select id="available">
+            <option value="available">available</option>
+            <option value="unavailable">unavailable</option>
+        </select>
+        <button onclick="addFleet()">Add Fleet</button>
+
     </div>
+    <div class="navbar">
+        <select id="filterCat" onchange="applyFilters()">
+            <option value="">All category</option>
+            <option>Auto</option>
+            <option>Car</option>
+            <option>Truck</option>
+            <option>Bus</option>
+        </select>
+        <select id="filterAvail" onchange="applyFilters()">
+            <option value="">All Availability</option>
+            <option>available</option>
+            <option>unavailable</option>
+        </select>
+        <button onclick="clearFilter()">clearFilter</button>
+
+    </div>
+    <div class="main" id="main"></div>
+    <script src="app.js"></script>
 </body>
 </html>
