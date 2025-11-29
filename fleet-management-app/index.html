@@ -9,9 +9,26 @@
             font-family: Arial, Helvetica, sans-serif; display: flex;justify-content: center;align-items: center;height: 100vh;}
             #login-box{width: 300px;padding: 20px;border: 1px solid #999; border-radius: 5px;}
             input{width:100%;padding:8px; margin: 10px 0;}
+            button{width: 100%;padding: 10px;}
     </style>
 </head>
 <body>
-    
+   <div id="login-box">
+    <h2>Login</h2>
+    <input id="email" type="email"placeholder="enter email">
+    <input id="password" type="password" placeholder="enter the email password">
+<button onclick="login()">Login</button>   </div> 
+<script>
+    function login(){
+        let email=document.getElementById("email").value;
+        let pass=document.getElementById("password").vlaue;
+        if (email ==="admin@gmail.com"&& pass==="admin1234"){
+            alert("login Success");
+            window.location.href="admin.html";
+        }else{
+            alert("wrong email or password");
+        }
+    }
+</script>
 </body>
 </html>
